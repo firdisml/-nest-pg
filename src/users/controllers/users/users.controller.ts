@@ -21,7 +21,7 @@ export class UsersController {
     return this.usersService.createUser(createUserDto);
   }
 
-  @Get('id/:id')
+  @Get('id/search/:id')
   findUsersById(@Param('id', ParseIntPipe) id: number) {
     return this.usersService.findUsersById(id);
   }
